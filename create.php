@@ -6,7 +6,7 @@ if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['creat
 
     $resut = insert($_POST['name'], $_POST['description'], $_POST['created_at']);
 
-    var_dump($resut);
+    header('Location: index.php');
 }
 
 require_once 'view/indexTemplate.php';
